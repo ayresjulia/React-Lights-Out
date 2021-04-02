@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test matches snapshot 1`] = `
+<DocumentFragment>
+  <td
+    class="Cell "
+    role="button"
+  >
+    <img
+      alt="lightbulb"
+      class="Cell-img-bw"
+      src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+    />
+  </td>
+</DocumentFragment>
+`;

@@ -14,9 +14,26 @@ import "./Cell.css";
  *
  **/
 
-function Cell({ flipCellsAroundMe, isLit }) {
-  const classes = `Cell ${isLit ? "Cell-lit" : ""}`;
-  return <td className={classes} onClick={flipCellsAroundMe} />;
+function Cell ({ flipCellsAroundMe, isLit }) {
+	const classes = `Cell ${isLit ? "Cell-lit" : ""}`;
+	return (
+		<td className={classes} onClick={flipCellsAroundMe} role="button">
+			{isLit && (
+				<img
+					className="Cell-img"
+					src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+					alt="lightbulb"
+				/>
+			)}
+			{!isLit && (
+				<img
+					className="Cell-img-bw"
+					src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+					alt="lightbulb"
+				/>
+			)}
+		</td>
+	);
 }
 
 export default Cell;

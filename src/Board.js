@@ -27,7 +27,10 @@ import "./Board.css";
  *
  **/
 
-function Board ({ nrows = 5, ncols = 5, chanceLightStartsOn = 1 }) {
+const NIGHT_IMG =
+	"https://images.unsplash.com/photo-1505762088641-031f116a9906?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80";
+
+function Board ({ nrows = 5, ncols = 5, chanceLightStartsOn = 0 }) {
 	const [ board, setBoard ] = useState(createBoard());
 	/** create a board nrows high/ncols wide, each cell randomly lit or unlit */
 	function createBoard () {
@@ -77,7 +80,8 @@ function Board ({ nrows = 5, ncols = 5, chanceLightStartsOn = 1 }) {
 
 	// if the game is won, just show a winning msg & render nothing else
 	if (hasWon()) {
-		return <div>You Won!</div>;
+		document.body.style.backgroundImage = `url(${NIGHT_IMG})`;
+		return <div className="winning-msg">You Won!</div>;
 	}
 	// make table board
 	let tableBoard = [];
@@ -95,10 +99,11 @@ function Board ({ nrows = 5, ncols = 5, chanceLightStartsOn = 1 }) {
 		}
 		tableBoard.push(<tr key={y}>{row}</tr>);
 	}
+
 	return (
 		<div>
-			<table>
-				<tbody>{tableBoard}</tbody>
+			<table className="table">
+				<tbody className="Board-body">{tableBoard}</tbody>
 			</table>
 		</div>
 	);
