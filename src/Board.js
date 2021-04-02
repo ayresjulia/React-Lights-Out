@@ -30,60 +30,58 @@ import "./Board.css";
 const NIGHT_IMG =
 	"https://images.unsplash.com/photo-1505762088641-031f116a9906?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80";
 
-function Board ({ nrows = 5, ncols = 5, chanceLightStartsOn = 0 }) {
+function Board ({ nrows = 5, ncols = 5, chanceLightStartsOn = 1 }) {
 	const [ board, setBoard ] = useState(createBoard());
 	/** create a board nrows high/ncols wide, each cell randomly lit or unlit */
 	function createBoard () {
 		let initialBoard = [];
-		// create array-of-arrays of true/false values
-
 		for (let y = 0; y < nrows; y++) {
 			let row = [];
 			for (let x = 0; x < ncols; x++) {
-				row.push(Math.random() < chanceLightStartsOn); // 100% of lights start on for winnable board assuming it's symmetric (source: https://www.jaapsch.net/puzzles/lomath.htm#all)
-				// row.push(Math.random() < 0.3); // for random true/false values of cells, uncomment this. 0.3 = 30% of cell being True
+				row.push(Math.random() < chanceLightStartsOn); // NOTE: 100% of lights start on for winnable board assuming it's symmetric (source: https://www.jaapsch.net/puzzles/lomath.htm#all)
+				// row.push(Math.random() < 0.3); // NOTE: for random true/false values of cells, uncomment this. 0.3 = 30% of cell being True
 			}
 			initialBoard.push(row);
 		}
-		return initialBoard; // returns a nested array 5x5
+		return initialBoard; // NOTE: returns a nested array 5x5
 	}
 
 	function hasWon () {
-		// TODO: check the board in state to determine whether the player has won.
+		// NOTE: check the board in state to determine whether the player has won.
 		return board.every((row) => row.every((cell) => !cell));
 	}
 
 	function flipCellsAround (coord) {
 		setBoard((oldBoard) => {
-			const [ y, x ] = coord.split("-").map(Number); // map(Number) converts string values to nums in the array
+			const [ y, x ] = coord.split("-").map(Number); // NOTE:map(Number) converts string values to nums in the array
 
 			const flipCell = (y, x, boardCopy) => {
-				// if this coord is actually on board, flip it
+				// NOTE: if this coord is actually on board, flip it
 
 				if (x >= 0 && x < ncols && y >= 0 && y < nrows) {
 					boardCopy[y][x] = !boardCopy[y][x];
 				}
 			};
 
-			// Make a (deep) copy of the oldBoard
+			// NOTE: Make a (deep) copy of the oldBoard
 			let copyOldBoard = oldBoard.map((row) => [ ...row ]);
 
-			// in the copy, flip this cell and the cells around it
-			flipCell(y, x, copyOldBoard); // flip original cell
-			flipCell(y, x - 1, copyOldBoard); // flip left col cell
-			flipCell(y, x + 1, copyOldBoard); // flip right col cell
-			flipCell(y - 1, x, copyOldBoard); // flip top row cell
-			flipCell(y + 1, x, copyOldBoard); // flip top bottom cell
+			// NOTE: in the copy, flip this cell and the cells around it
+			flipCell(y, x, copyOldBoard); // NOTE: flip original cell
+			flipCell(y, x - 1, copyOldBoard); // NOTE: flip left col cell
+			flipCell(y, x + 1, copyOldBoard); // NOTE: flip right col cell
+			flipCell(y - 1, x, copyOldBoard); // NOTE: flip top row cell
+			flipCell(y + 1, x, copyOldBoard); // NOTE: flip top bottom cell
 			return copyOldBoard;
 		});
 	}
 
-	// if the game is won, just show a winning msg & render nothing else
+	// NOTE: if the game is won, just show a winning msg & render nothing else
 	if (hasWon()) {
 		document.body.style.backgroundImage = `url(${NIGHT_IMG})`;
 		return <div className="winning-msg">You Won!</div>;
 	}
-	// make table board
+	// NOTE: make table board
 	let tableBoard = [];
 	for (let y = 0; y < nrows; y++) {
 		let row = [];
@@ -102,6 +100,10 @@ function Board ({ nrows = 5, ncols = 5, chanceLightStartsOn = 0 }) {
 
 	return (
 		<div>
+			<h1>Lights Out!</h1>
+			<p>
+				<i>Turn all the lights off for the night mode. Good Luck!</i>
+			</p>
 			<table className="table">
 				<tbody className="Board-body">{tableBoard}</tbody>
 			</table>

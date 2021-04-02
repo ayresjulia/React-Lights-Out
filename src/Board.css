@@ -1,3 +1,22 @@
 .Board-body {
 	margin: 0 auto;
 }
+
+.table {
+	text-align: center;
+}
+.winning-msg {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 40%;
+	font-size: 70px;
+	color: #fff;
+	text-shadow: 0 0 1.5rem #f5f23b, -0.2rem 0.1rem 1rem #f5f23b, 0.2rem 0.1rem 1rem #f5f23b,
+		0 -0.5rem 2rem #f5f23b;
+}

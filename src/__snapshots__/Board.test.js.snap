@@ -2,10 +2,283 @@
 
 exports[`snapshot test matches snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="winning-msg"
-  >
-    You Won!
+  <div>
+    <h1>
+      Lights Out!
+    </h1>
+    <p>
+      <i>
+        Turn all the lights off for the night mode. Good Luck!
+      </i>
+    </p>
+    <table
+      class="table"
+    >
+      <tbody
+        class="Board-body"
+      >
+        <tr>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+          <td
+            class="Cell Cell-lit"
+            role="button"
+          >
+            <img
+              alt="lightbulb"
+              class="Cell-img"
+              src="https://lh3.googleusercontent.com/proxy/RgoMpRZgtnNWhvmvnRjUhv57j_xBJLMV6iNSsneS5Gp0EzeVXmwbPlLxWnzto2aztG-3mB2KSqh57Ynfc1qrUphyQ2TR-d6l8q6lSbxq3QXGMqh_NA"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </DocumentFragment>
 `;

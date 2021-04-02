@@ -5,3 +5,14 @@
 
 	border-radius: 50%;
 }
+
+.Cell-img {
+	height: 100px;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 50%;
+}
+.Cell-img-bw {
+	height: 100px;
+	filter: grayscale(100%);
+}
